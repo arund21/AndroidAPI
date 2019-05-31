@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".ProductDetails">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgItem"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/item"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imgItem"
+        android:hint="Item Name"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/tvItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvItemName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Item Price"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvItemPrice"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Item Description"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

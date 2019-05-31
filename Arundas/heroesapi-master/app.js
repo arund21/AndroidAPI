@@ -50,7 +50,7 @@ app.use('*', cors());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/upload', uploadRouter);
-// app.use(auth);
+app.use(auth);
 app.use('/heroes', heroesRouter);
 app.use('/villains', villainsRouter);
 module.exports = app;

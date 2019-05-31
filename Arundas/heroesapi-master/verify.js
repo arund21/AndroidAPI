@@ -1,5 +1,5 @@
 module.exports = function (req, res, next) {
-    console.log(req.user);
+    console.log(req.body);
     if (!req.user) {
         let err = new Error('You are not authenticated!');
         err.status = 403;

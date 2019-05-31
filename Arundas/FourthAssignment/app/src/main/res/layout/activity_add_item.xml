@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".AddItem">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imgImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/item"
+        />
+    <EditText
+        android:id="@+id/etItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Name"
+        />
+    <EditText
+        android:id="@+id/etItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Price"
+        />
+
+    <EditText
+        android:id="@+id/etImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Image Name"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/etItemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Item Description"
+        android:inputType="text|textMultiLine"
+        android:gravity="top"
+        />
+    <Button
+        android:id="@+id/btnAddMyItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add My Item"
+        />
+
+</LinearLayout>
